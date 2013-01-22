@@ -1,18 +1,9 @@
-This package was debianized by Lingtao Pan <freeplant@gmail.com> on
-Thu, 15 March 2012 14:45:30 +0800.
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: https://github.com/haiwen/seafile
 
-It was downloaded from http://www.gonggeng.org/seasite/download/
-
-Upstream Author(s):
-
-    Lingtao Pan <freeplant@gmail.com>
-
-Copyright:
-
-    Copyright (C) 2012 by plt.
-
-License:
-    GPLv3
-
-The Debian packaging is copyright 2012, Lingtao Pan <freeplant@gmail.com> and
-is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+Files: *
+Copyright: © 2010-2012 Lingtao Pan <freeplant@gmail.com>
+License: GPL-3+
+ The full text of version 3 of the GPL is distributed as LICENCE.txt in
+ this package's source, or in /usr/share/common-licenses/GPL-3 on
+ Debian systems.
