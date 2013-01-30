@@ -16,7 +16,7 @@ DEB_UPSTREAM_VERSION = $(shell dpkg-parsechangelog -l$(DEB_DEBIAN_DIR)/changelog
 
 searpc_dir := $(CURDIR)/libsearpc
 ccnet_dir := $(CURDIR)/ccnet
-destdir := $(CURDIR)/debian/seafile
+destdir := $(CURDIR)/debian/seafile-client
 install_prefix := $(destdir)/usr
 seafile_pkg_config := $(install_prefix)/lib/pkgconfig
 seafile_path := $(install_prefix)/bin

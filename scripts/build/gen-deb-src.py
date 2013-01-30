@@ -19,6 +19,7 @@ if sys.version_info[1] < 6:
 
 import os
 import tempfile
+import glob
 import shutil
 import re
 import subprocess
@@ -137,6 +138,17 @@ def check_targz_src(proj, version, srcdir):
     src_tarball = os.path.join(srcdir, '%s-%s.tar.gz' % (proj, version))
     if not os.path.exists(src_tarball):
         error('%s not exists' % src_tarball)
+
+def remove_unused_files():
+    srcdir = os.path.join(conf[CONF_BUILDDIR], 'seafile-%s' % conf[CONF_VERSION])
+    web_sh_files = glob.glob(os.path.join(srcdir, 'web', '*.sh'))
+    files = [
+        os.path.join(srcdir, 'web', 'pygettext.py'),
+    ]
+    files.extend(web_sh_files)
+
+    for f in files:
+        run('rm -f %s' % f)
 
 def gen_tarball():
     output = os.path.join(conf[CONF_OUTPUTDIR], 'seafile-%s.debsrc.tar.gz' % conf[CONF_VERSION])
@@ -346,6 +358,7 @@ def main():
     uncompress_libsearpc()
     uncompress_ccnet()
     remove_debian_subdir()
+    remove_unused_files()
     gen_tarball()
 
 if __name__ == '__main__':
