@@ -1,9 +1,25 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: seafile
+Upstream-Contact: Lingtao Pan <freeplant@gmail.com>
 Source: https://github.com/haiwen/seafile
 
 Files: *
-Copyright: © 2010-2012 Lingtao Pan <freeplant@gmail.com>
-License: GPL-3+
+Copyright: (c) 2010-2012 Lingtao Pan <freeplant@gmail.com>
+License:
  The full text of version 3 of the GPL is distributed as LICENCE.txt in
  this package's source, or in /usr/share/common-licenses/GPL-3 on
  Debian systems.
+ . 
+ In addition, as a special exception, the copyright holders give
+ permission to link the code of portions of this program with the
+ OpenSSL library under certain conditions as described in each
+ individual source file, and distribute linked combinations including
+ the two.
+ .
+ You must obey the GNU General Public License in all respects for all
+ of the code used other than OpenSSL. If you modify file(s) with this
+ exception, you may extend this exception to your version of the
+ file(s), but you are not obligated to do so. If you do not wish to do
+ so, delete this exception statement from your version. If you delete
+ this exception statement from all source files in the program, then
+ also delete it here.
